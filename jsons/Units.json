@@ -1,24 +1,20 @@
 [
   {
 		"name": "Dulas",
-		"unitType": "Sword",
-		"replaces": "Warrior",
+		"unitType": "Armored",
 		"movement": 20,
 		"strength": 800,
-		"cost": 40,
 		"promotions": ["[Jaguar] ability","Woodsman","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
   {
 		"name": "Chupas",
-		"unitType": "Archery",
-		"replaces": "Archer",
+		"unitType": "Gunpowder",
 		"movement": 20,
 		"strength": 400,
 		"rangedStrength": 70,
 		"cost": 40,
-		"requiredTech": "Archery",
 		"upgradesTo": "Composite Bowman",
 		"promotions": ["Slinger Withdraw","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"attackSound": "arrow"
