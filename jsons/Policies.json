@@ -554,7 +554,7 @@
             "Scientific": 40
         },
         "uniques": [
-            "[-33]% maintenance costs <for [All] units>",
+            "[-33]% maintenance costs <for [All] units>","Only available <before adopting [Rationalism]>",
             "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
             "Only available <before adopting [Freedom]>"
         ],
@@ -623,7 +623,7 @@
             "Scientific": 50
         },
         "uniques": [
-            "[+1 Happiness] [in all cities]",
+            "[+1 Happiness] [in all cities]","Only available <before adopting [Rationalism]>",
             "Only available <before adopting [Freedom]>"
         ],
         "policies": [
