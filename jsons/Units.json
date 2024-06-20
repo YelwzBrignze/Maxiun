@@ -6,7 +6,7 @@
 		"movement": 20,
 		"strength": 800,
 		"cost": 40,
-		"promotions": ["[Jaguar] ability","Woodsman"],
+		"promotions": ["[Jaguar] ability","Woodsman","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
@@ -20,7 +20,7 @@
 		"cost": 40,
 		"requiredTech": "Archery",
 		"upgradesTo": "Composite Bowman",
-		"promotions": ["Slinger Withdraw"],
+		"promotions": ["Slinger Withdraw","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"attackSound": "arrow"
 	}
 ]
