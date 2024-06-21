@@ -1,11 +1,12 @@
 [
   {
 		"name": "Dulas",
-		"unitType": "Armored",
+		"unitType": "Sword",
 		"movement": 20,
 		"strength": 800,
+	  	"obsoleteTech": "Metal Casting",
 		"promotions": ["[Jaguar] ability","Woodsman","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
-		"upgradesTo": "Swordsman",
+		"upgradesTo": "Legios",
 		"attackSound": "nonmetalhit"
 	},
   {
@@ -15,8 +16,83 @@
 		"strength": 400,
 		"rangedStrength": 70,
 		"cost": 40,
-		"upgradesTo": "Composite Bowman",
+	  	"obsoleteTech": "Construction",
+		"upgradesTo": "Compositeir",
 		"promotions": ["Slinger Withdraw","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"attackSound": "arrow"
-	}
+	},
+	//Classical
+	{
+		"name": "Legios",
+		"unitType": "Sword",
+		"movement": 20,
+		"strength": 170,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Landskn",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles",
+				"Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Compositeir",
+		"unitType": "Archery",
+		"movement": 20,
+		"strength": 700,
+		"rangedStrength": 11,
+		"cost": 75,
+		"requiredTech": "Construction",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Keshika",
+		"uniques": ["Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"attackSound": "arrow"
+	},
+	//Mediaval
+	{
+		"name": "Landskn",
+		"unitType": "Sword",
+		"movement": 20,
+		"strength": 160,
+		"cost": 45,
+		"requiredTech": "Civil Service",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>", "Can move immediately once bought","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"upgradesTo": "Lancer",
+		"obsoleteTech": "Metallurgy",
+		"attackSound": "metalhit"
+		//"Requires [Mercenary Army]" in BNW
+	},
+	{
+		"name": "Keshika",
+		"unitType": "Archery",
+		"range": 20,
+		"movement": 50,
+		"strength": 150,
+		"rangedStrength": 160,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Horses",
+		"upgradesTo": "Cavalry",
+		"obsoleteTech": "Military Science",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"promotions": ["Great Generals I", "Quick Study"],
+		"attackSound": "arrow"
+		// Keshik should have no penalty attacking cities
+	},
+	//Renaissance
+	{
+		"name": "Turtle Shipper",
+		"unitType": "Melee Water",
+		"movement": 40,
+		"strength": 360,
+		"cost": 120,
+		"requiredTech": "Astronomy",
+		"upgradesTo": "Ironclad",
+		"obsoleteTech": "Combustion",
+		"uniques": ["Coastal Raider I", "Coastal Raider II", "Coastal Raider III", "Supply", "[Privateer] ability","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
 ]
