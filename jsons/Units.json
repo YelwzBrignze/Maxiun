@@ -5,7 +5,8 @@
 		"movement": 20,
 		"strength": 800,
 	  	"obsoleteTech": "Metal Casting",
-		"promotions": ["[Jaguar] ability","Woodsman","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+	  	"uniques": ["Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"promotions": ["[Jaguar] ability","Woodsman"],
 		"upgradesTo": "Legios",
 		"attackSound": "nonmetalhit"
 	},
@@ -18,7 +19,8 @@
 		"cost": 40,
 	  	"obsoleteTech": "Construction",
 		"upgradesTo": "Compositeir",
-		"promotions": ["Slinger Withdraw","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+	  	"uniques": ["Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
+		"promotions": ["Slinger Withdraw"],
 		"attackSound": "arrow"
 	},
 	//Classical
@@ -34,6 +36,7 @@
 		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles",
 				"Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"hurryCostModifier": 20,
+		"promotions": ["Besiege"],
 		"attackSound": "metalhit"
 	},
 	{
@@ -45,6 +48,7 @@
 		"cost": 75,
 		"obsoleteTech": "Machinery",
 		"upgradesTo": "Keshika",
+		"promotions": ["Volley"],
 		"uniques": ["Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"attackSound": "arrow"
 	},
@@ -56,7 +60,8 @@
 		"strength": 160,
 		"cost": 45,
 		"uniques": ["[+50]% Strength <vs [Mounted] units>", "Can move immediately once bought","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
-		"upgradesTo": "Lancer",
+		"upgradesTo": "Mehal Sefari",
+		"promotions": ["Great Generals II"]
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
 		//"Requires [Mercenary Army]" in BNW
@@ -89,5 +94,48 @@
 		"uniques": ["Coastal Raider I", "Coastal Raider II", "Coastal Raider III", "Supply", "[Privateer] ability","Unbuildable","Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [2] tiles"],
 		"hurryCostModifier": 30,
 		"attackSound": "cannon"
+	},
+	{
+		"name": "Ship Liner",
+		"unitType": "Ranged Water",
+		"movement": 50,
+		"strength": 300,
+		"rangedStrength": 350,
+		"cost": 185,
+		"requiredResource": "Iron",
+		"uniques": ["[+1] Sight","Unbuildable","Never appears as a Barbarian unit"],
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"promotions": ["Drill III","Home Sweet Home"],
+		"attackSound": "shipCannonVolley"
+	},
+	//Industrial
+	{
+		"name": "Mehal Sefari",
+		"unitType": "Gunpowder",
+		"movement": 20,
+		"strength": 340,
+		"cost": 200,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Foreign Legios",
+		"promotions": ["Drill III","Home Sweet Home"]
+		"uniques": ["Unbuildable","Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+	},
+	//Modern
+	{
+		"name": "Foreign Legios",
+		"unitType": "Gunpowder",
+		"movement": 20,
+		"strength": 500,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Plastics",
+		"uniques": ["[+20]% Strength <when fighting in [Foreign Land] tiles>","Unbuildable","Never appears as a Barbarian unit"],
+		"attackSound": "shot"
 	},
 ]
